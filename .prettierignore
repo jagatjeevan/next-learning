@@ -1,0 +1,6 @@
+package.json
+package-lock.json
+node_modules/
+out/
+.next/
+service-worker.js
