@@ -1,14 +1,7 @@
-import PropTypes from 'prop-types';
 import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
-  // eslint-disable-next-line
-  return <Component {...pageProps} />;
+function MyApp() {
+  return <h1>App</h1>;
 }
-
-MyApp.propTypes = {
-  Component: PropTypes.element.isRequired,
-  pageProps: PropTypes.any.isRequired,
-};
 
 export default MyApp;

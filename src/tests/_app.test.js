@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer';
-import Home from '../../pages/index';
+import MyApp from '../../pages/_app';
 
 it('renders a snaps̵hot', () => {
-  const tree = renderer.create(<Home />).toJSON();
+  const tree = renderer.create(<MyApp />).toJSON();
   expect(tree).toMatchSnapshot();
 });
