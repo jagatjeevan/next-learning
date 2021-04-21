@@ -10,7 +10,7 @@ describe('App', () => {
 });
 
 it('renders a snapshot', () => {
-  const tree = renderer.create(<About/>).toJSON();
+  const tree = renderer.create(<About />).toJSON();
   console.log(tree);
   expect(tree).toMatchSnapshot();
 });

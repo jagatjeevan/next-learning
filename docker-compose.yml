@@ -12,3 +12,14 @@ services:
       - ./pages:/app/pages
       - ./public:/app/public
       - ./styles:/app/styles
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /app/node_modules
+      - ./src:/app/src
+      - ./pages:/app/pages
+      - ./public:/app/public
+      - ./styles:/app/styles
+    command: ['npm', 'run', 'test']
