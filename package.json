@@ -9,8 +9,8 @@
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
     "test": "jest",
-    "coverage" : "yarn run test -- --coverage",
-    "open-coverage" : "open coverage/lcov-report/index.html" 
+    "coverage": "npm test -- --coverage",
+    "open-coverage": "open coverage/lcov-report/index.html"
   },
   "dependencies": {
     "next": "10.1.3",
