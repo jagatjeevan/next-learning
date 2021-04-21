@@ -1,0 +1,7 @@
+node_modules
+.next
+Readme.md
+.prettierignore
+.prettierrc.json
+.nvmrc
+.eslintrc.json
