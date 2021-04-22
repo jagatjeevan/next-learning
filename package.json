@@ -14,7 +14,7 @@
     "open-coverage": "open coverage/lcov-report/index.html",
     "eslint": "eslint \"**/*.js\"",
     "eslint:fix": "npm run eslint --fix",
-    "snapshot": "npm run test -- -u"
+    "update-snapshot": "npm run test -- -u"
   },
   "pre-commit": [
     "prettier",
