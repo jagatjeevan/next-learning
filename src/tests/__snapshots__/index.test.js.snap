@@ -1,7 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home updates the snapshot 1`] = `
-<h1>
-  Home page of the application
-</h1>
+Array [
+  <h1>
+    Home page of the application
+  </h1>,
+  "Go to ",
+  <a
+    href="/about"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    About page
+  </a>,
+]
 `;

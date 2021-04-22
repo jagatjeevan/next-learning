@@ -10,6 +10,14 @@ exports[`renders a snaps̵hot 1`] = `
       About Page 2
     </h2>
   </div>
+  Go to 
+  <a
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Home page
+  </a>
   <div>
     <button
       onClick={[Function]}

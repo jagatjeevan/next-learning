@@ -1,0 +1,111 @@
+:root {
+  /* Color System */
+  --universal-white: #ffffff;
+  --universal-black: #222222;
+  --axis-black: #231f20;
+  --axis-default: #97214d;
+  --axis-fd-default: #97144d;
+  --axis-red: #ed1164;
+  --axis-grey-dark: #6d6e71;
+  --axis-grey-light: #d1d3d4;
+  --axis-grey: #939598;
+  --axis-fd-grey: #bebfc0;
+  --axis-fd-dark-grey: #696b6f;
+  --axis-fd-black: #323232;
+  --axis-fd-bg: #f8f8f8;
+
+  /* Common */
+  --box-shadow: #999;
+  --timer-progress-bg: #e9e9e9;
+  --timer-progress-color: #689f39;
+  --middle-body-bg: #f2f5fc;
+  --sub-text-grey: #666666;
+  --succes-box-border: #dddddd;
+  --edit-text: #ff0062;
+  --heading-tenure-color: #97134c;
+
+  /* Checkbox */
+  --checkbox-label: #888888;
+
+  /* Button */
+  --btn-pseudo-after-bg: rgba(255, 255, 255, 0.3);
+
+  /* Input */
+  --input-bg: #f9fcff;
+  --input-border: #d1e8ff;
+  --input-box-border: #eeeeee;
+
+  /* OTP Layout */
+  --input-boxes-error-bg: #f9efef;
+  --input-boxes-value-color: #d47c79;
+
+  /* App Layout */
+  --app-overlay-color: rgba(0, 0, 0, 0.5);
+
+  /* Banner Layout */
+  --banner-bg: #f9f9f9;
+
+  /* Pop Up */
+  --pop-up-overlay-color: rgba(255, 255, 255, 0.6);
+
+  /* Header */
+  --header-text: #979797;
+  --step-circle-border: #e1e1e2;
+
+  /* Footer */
+  --footer-text: #979797;
+
+  /* Aadhaar details page */
+  --aadhaar-details-bg: #f8f3f0;
+
+  /* Modal */
+  --modal-container-bg-color: #999999;
+  --modal-box-shadow: rgba(0, 0, 0, 0.004);
+  --modal-body-color: #aaaaaa;
+  --modal-active-color: #e74c3c;
+  --modal-bg-color: rgba(160, 160, 160, 0.93);
+
+  /* Fonts */
+  /* default: 8px */
+  --font-size-xxs: 0.571em;
+  /* default: 10px */
+  --font-size-xs: 0.714em;
+  /* default: 12px */
+  --font-size-sm: 0.857em;
+  /* default: 14px */
+  --font-size-md: 1em;
+  /* default: 16px */
+  --font-size-lg: 1.143em;
+  /* default: 18px */
+  --font-size-xg: 1.286em;
+
+  /* Card-section */
+  --card-border: #f6f6f6;
+  --select-box-border: #d8d8d8;
+  --select-box-color: #5c5c5c;
+  --select-box-error-color: #ff0000;
+
+  /* Icons */
+  --error-icon-bg: #ffebe6;
+  /* Spacing */
+  --spacer: 16px;
+  /* font weights */
+  --font-weight-bold: 700;
+
+  /* line-height */
+  --line-height-sm: 18px;
+  --line-height-lg: 24px;
+
+  /* font sizes */
+  /* Assumes the browser default, typically 16px */
+  --font-size-base: 16px;
+
+  --h1-font-size: calc(var(--font-size-base) * 1.25);
+
+  /* Typography */
+  --font-weight-lighter: lighter;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-bolder: bolder;
+}

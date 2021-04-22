@@ -1,5 +1,10 @@
 module.exports = {
-  testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/', 'jest.config.js', '<rootDir>/.next/'],
+  testPathIgnorePatterns: [
+    '<rootDir>/.next/',
+    '<rootDir>/node_modules/',
+    'jest.config.js',
+    '<rootDir>/.next/',
+  ],
   setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
   transform: {
     '^.+\\.(js|jsx)$': '<rootDir>/node_modules/babel-jest',
@@ -8,7 +13,12 @@ module.exports = {
     '\\.(css|scss)$': 'identity-obj-proxy',
   },
   collectCoverageFrom: ['<rootDir>/pages', '**/*.{js,jsx}'],
-  coveragePathIgnorePatterns: ['<rootDir>/pages/api', '<rootDir>/coverage/', 'jest.config.js', '<rootDir>/.next/'],
+  coveragePathIgnorePatterns: [
+    '<rootDir>/pages/api',
+    '<rootDir>/coverage/',
+    'jest.config.js',
+    '<rootDir>/.next/',
+  ],
   coverageThreshold: {
     global: {
       branches: 100,
