@@ -19,6 +19,7 @@ This opens (both locally and docker way) the 3000 port to see the application
 
 # Tech stacks used
 
+- [Yarn](https://yarnpkg.com/) : We are using yarn for dependency management
 - [Next](https://nextjs.org/) : Base of the project
 - [React](https://reactjs.org/) : Components built in React
 - [Node](https://nodejs.org/en/) : Check the version in .nvmrc file
