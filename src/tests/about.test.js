@@ -7,9 +7,9 @@ describe('App', () => {
     const { getByText } = render(<About />);
     expect(getByText('About Page')).toBeInTheDocument();
   });
-});
 
-it('renders a snaps̵hot', () => {
-  const tree = renderer.create(<About />).toJSON();
-  expect(tree).toMatchSnapshot();
+  test('renders a snaps̵hot', () => {
+    const tree = renderer.create(<About />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

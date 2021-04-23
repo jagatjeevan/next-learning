@@ -8,7 +8,8 @@ export default function Home() {
   return (
     <div className="container">
       <h1>Home page of the application</h1>
-      Go to <Link href="/about">About page</Link>
+      Go to
+      <Link href="/about">About page</Link>
       <button type="button" onClick={handleClick}>
         sdfgsdfgsdfg
       </button>

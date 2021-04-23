@@ -1,5 +1,8 @@
-import '../styles/globals.scss';
 import Head from 'next/head';
+import '../styles/globals.scss';
+
+// Global component styles
+import '../styles/component-styles.scss';
 
 function MyApp({ Component, pageProps }) {
   return (

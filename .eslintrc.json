@@ -21,6 +21,7 @@
     "react/jsx-one-expression-per-line": 1,
     "react/forbid-prop-types": 1,
     "object-curly-newline": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "react/button-has-type": 1
   }
 }

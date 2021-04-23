@@ -1,0 +1,76 @@
+@import '../../../../styles/variables';
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(25, 25);
+    opacity: 0.75;
+  }
+  50% {
+    transform: scale(50, 50);
+    opacity: 0.5;
+  }
+  75% {
+    transform: scale(75, 75);
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(100, 100);
+  }
+}
+
+button {
+  background-color: $axis-fd-default;
+  border: none;
+  border-radius: 8px;
+  color: $universal-white;
+  font-family: 'lato';
+  font-size: 16px;
+  height: 54px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+
+  &.secondary {
+    background-color: $axis-fd-grey;
+    border: 1px solid $axis-grey-light;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 5%;
+    height: 100%;
+    background: $btn-pseudo-after-bg;
+    opacity: 0;
+    border-radius: 100%;
+  }
+
+  &.tertiary {
+    background-color: $universal-white;
+    border: 1px solid $axis-fd-default;
+    color: $axis-fd-default;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  &.primary {
+    &:disabled {
+      background-color: $axis-fd-grey;
+      opacity: 1;
+    }
+  }
+}
+
+button:focus:not(:active)::after {
+  animation: ripple 0.5s ease-out;
+}

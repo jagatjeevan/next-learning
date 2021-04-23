@@ -2,6 +2,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
 import styles from './About.module.scss';
+import Button from '../../src/components/form_elements/button';
 
 const About = ({ userName }) => {
   const [name, setName] = useState(userName);
@@ -19,10 +20,11 @@ const About = ({ userName }) => {
         <h1>About Page</h1>
         <h2>About Page 2</h2>
       </div>
-      Go to <Link href="/">Home page</Link>
-      <button type="button" onClick={handleClick}>
-        sadfgsdfgsdfg
-      </button>
+      Go to
+      <Link href="/">Home page</Link>
+      <Button type="button" onClick={handleClick}>
+        Fetch Data
+      </Button>
     </div>
   );
 };
