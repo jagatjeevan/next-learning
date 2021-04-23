@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders a snaps̵hot 1`] = `
-<div>
+<div
+  className="container"
+>
   <div>
     <h1>
       About Page
@@ -18,13 +20,11 @@ exports[`renders a snaps̵hot 1`] = `
   >
     Home page
   </a>
-  <div>
-    <button
-      onClick={[Function]}
-      type="button"
-    >
-      Fetch data
-    </button>
-  </div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    sadfgsdfgsdfg
+  </button>
 </div>
 `;

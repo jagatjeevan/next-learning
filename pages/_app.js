@@ -1,9 +1,15 @@
-import '../styles/variables.css';
-import '../styles/globals.css';
+import '../styles/globals.scss';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
-  // eslint-disable-next-line
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <title>Axis : Loan Against Securities</title>
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;
