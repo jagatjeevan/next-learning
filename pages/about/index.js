@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
+import styles from './About.module.scss';
 
 const About = ({ userName }) => {
   const [name, setName] = useState(userName);
@@ -12,7 +13,7 @@ const About = ({ userName }) => {
   const getGreetings = () => (name ? `Welcome ${name}` : null);
 
   return (
-    <div className="container">
+    <div className={`container ${styles.aboutPage}`}>
       {getGreetings()}
       <div>
         <h1>About Page</h1>

@@ -2,7 +2,7 @@
 
 exports[`renders a snaps̵hot 1`] = `
 <div
-  className="container"
+  className="container aboutPage"
 >
   <div>
     <h1>
