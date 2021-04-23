@@ -22,7 +22,7 @@ const About = ({ userName }) => {
       </div>
       Go to
       <Link href="/">Home page</Link>
-      <Button type="button" onClick={handleClick}>
+      <Button type="button" onClick={handleClick} test-id="fetching-data">
         Fetch Data
       </Button>
     </div>
