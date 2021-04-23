@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 const Button = (props) => {
   const { customClass, onClick, variant, type, disabled, children } = props;
 
@@ -25,14 +23,5 @@ Button.defaultProps = {
   disabled: false,
   variant: 'primary',
 };
-
-Button.propTypes = {
-  customClass: PropTypes.string,
-  type: PropTypes.string,
-  disabled: PropTypes.bool,
-  onClick: PropTypes.func.isRequired,
-  children: PropTypes.any.isRequired,
-  variant: PropTypes.oneOf(['primary', 'secondary']),
-};
-
+// variant : primary, secondary
 export default Button;
