@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import '../src/utils/axis-interceptor';
 import '../styles/globals.scss';
 
 // Global component styles

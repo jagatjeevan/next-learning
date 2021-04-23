@@ -1,8 +1,9 @@
+import axios from 'axios';
 import Link from 'next/link';
 
 export default function Home() {
   const handleClick = () => {
-    console.log('Button was clicked');
+    axios.get('/api/hello').then((res) => console.log(res));
   };
 
   return (
