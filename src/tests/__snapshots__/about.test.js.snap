@@ -28,5 +28,13 @@ exports[`App renders a snaps̵hot 1`] = `
   >
     Fetch Data
   </button>
+  <button
+    className=" primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Create User
+  </button>
 </div>
 `;

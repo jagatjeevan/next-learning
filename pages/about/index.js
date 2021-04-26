@@ -18,6 +18,16 @@ const About = ({ userName }) => {
       .catch((error) => setErrorMessage(error));
   };
 
+  const handlePost = () => {
+    axios
+      .post('/api/hello')
+      .then((response) => {
+        setName(response.data.name);
+        setErrorMessage(null);
+      })
+      .catch((error) => setErrorMessage(error));
+  };
+
   const getGreetings = () => (name ? <div>Welcome {name}</div> : null);
 
   const getErrorMessage = () => (errorMessage ? <div>{errorMessage}</div> : null);
@@ -35,13 +45,19 @@ const About = ({ userName }) => {
       <Button type="button" onClick={handleGet} test-id="fetching-data">
         Fetch Data
       </Button>
+      <Button type="button" onClick={handlePost} test-id="creating-user">
+        Create User
+      </Button>
     </div>
   );
 };
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3000/api/hello', {
+  let res = await fetch('http://localhost:3000/api/hello', {
     method: 'GET',
+  });
+  res = await fetch('http://localhost:3000/api/hello', {
+    method: 'POST',
   });
   const data = await res.json();
 
