@@ -8,7 +8,7 @@ const About = ({ userName }) => {
   const [name, setName] = useState(userName);
   const [errorMessage, setErrorMessage] = useState();
 
-  const handleClick = () => {
+  const handleGet = () => {
     axios
       .get('/api/hello')
       .then((response) => {
@@ -32,7 +32,7 @@ const About = ({ userName }) => {
       </div>
       Go to
       <Link href="/">Home page</Link>
-      <Button type="button" onClick={handleClick} test-id="fetching-data">
+      <Button type="button" onClick={handleGet} test-id="fetching-data">
         Fetch Data
       </Button>
     </div>
