@@ -54,7 +54,7 @@ const About = ({ userName }) => {
 
 export async function getStaticProps() {
   let res = await fetch('http://localhost:3000/api/hello', {
-    method: 'GET',
+    method: 'POST',
   });
   res = await fetch('http://localhost:3000/api/hello', {
     method: 'POST',

@@ -23,7 +23,7 @@ describe('App', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('should fetch users', async () => {
+  it('should get users', async () => {
     const users = { data: { name: 'John Doe123' } };
     axios.get.mockResolvedValueOnce(users);
 
@@ -36,13 +36,38 @@ describe('App', () => {
     });
   });
 
-  it('Should reject with an error when API call fails', async () => {
+  it('Should reject with an error when get api call fails', async () => {
     const err = new Error('test error');
     axios.get.mockRejectedValueOnce('test err');
 
     const { getByText } = render(<About />);
     const fetchButton = getByText('Fetch Data');
     fireEvent.click(fetchButton);
+    await waitFor(() => {
+      expect(screen.getByText('test err')).toBeInTheDocument();
+    });
+  });
+
+  it('should create users', async () => {
+    const users = { data: { name: 'Maria123' } };
+    axios.post.mockResolvedValueOnce(users);
+
+    const { getByText } = render(<About />);
+    const createButton = getByText('Create User');
+    fireEvent.click(createButton);
+
+    await waitFor(() => {
+      expect(screen.queryByText(/Maria123/i)).toBeInTheDocument();
+    });
+  });
+
+  it('Should reject with an error when post API call fails', async () => {
+    const err = new Error('test error');
+    axios.post.mockRejectedValueOnce('test err');
+
+    const { getByText } = render(<About />);
+    const createButton = getByText('Create User');
+    fireEvent.click(createButton);
     await waitFor(() => {
       expect(screen.getByText('test err')).toBeInTheDocument();
     });
