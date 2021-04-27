@@ -10,7 +10,14 @@ export default function Home() {
     <div className="container">
       <h1>Home page of the application</h1>
       Go to
-      <Link href="/about">About page</Link>
+      <ul>
+        <li>
+          <Link href="/about">About page</Link>
+        </li>
+        <li>
+          <Link href="/login">Login page</Link>
+        </li>
+      </ul>
       <button type="button" onClick={handleClick}>
         sdfgsdfgsdfg
       </button>

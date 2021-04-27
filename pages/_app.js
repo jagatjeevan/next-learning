@@ -4,6 +4,7 @@ import '../styles/globals.scss';
 
 // Global component styles
 import '../styles/component-styles.scss';
+import { Provider as AuthProvider } from '../src/context/AuthContext';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -11,7 +12,9 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Axis : Loan Against Securities</title>
       </Head>
-      <Component {...pageProps} />
+      <AuthProvider>
+        <Component {...pageProps} />
+      </AuthProvider>
     </>
   );
 }

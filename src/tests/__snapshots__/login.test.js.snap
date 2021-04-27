@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login renders the login page when user is logged in 1`] = `
+Array [
+  <h1>
+    Login page
+  </h1>,
+  <a
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Home page
+  </a>,
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Login
+  </button>,
+]
+`;
+
+exports[`Login renders the login page when user is not logged in 1`] = `
+Array [
+  <h1>
+    Login page
+  </h1>,
+  <a
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Home page
+  </a>,
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Login
+  </button>,
+]
+`;

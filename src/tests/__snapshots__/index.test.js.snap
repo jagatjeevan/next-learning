@@ -8,13 +8,26 @@ exports[`Home updates the snapshot 1`] = `
     Home page of the application
   </h1>
   Go to
-  <a
-    href="/about"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-  >
-    About page
-  </a>
+  <ul>
+    <li>
+      <a
+        href="/about"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        About page
+      </a>
+    </li>
+    <li>
+      <a
+        href="/login"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Login page
+      </a>
+    </li>
+  </ul>
   <button
     onClick={[Function]}
     type="button"
